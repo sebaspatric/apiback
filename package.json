@@ -4,8 +4,9 @@
   "description": "exercise_one_to_many",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install"
   },
   "keywords": [
     "node.js",
@@ -15,15 +16,16 @@
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {    
-    "pg": "^8.7.3",
-    "pg-hstore": "^2.3.4",
-    "sequelize": "^6.6.2",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.16",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

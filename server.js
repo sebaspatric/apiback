@@ -51,3 +51,7 @@ db.sequelize.authenticate()
 
 //-- Asegúrate de que el propietario de la base de datos sea 'node_user' (si aplica)
 //ALTER DATABASE db_jwtbootcamp2 OWNER TO node_user;
+
+
+// Exportar app para Vercel
+module.exports = app;

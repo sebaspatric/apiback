@@ -1,8 +1,10 @@
+require('dotenv').config(); // Cargar variables de entorno
 module.exports = {
-  HOST: 'localhost',
-  USER: 'node_user',
-  PASSWORD: 'node_password',
-  DB: 'db_jwtbootcamp2',
+  HOST: process.env.DB_HOST,
+  USER: process.env.DB_USER,
+  PASSWORD: process.env.DB_PASSWORD,
+  DB: process.env.DB_NAME,
+  PORT: process.env.DB_PORT || 5432, // Usar el puerto de Supabase o 5432 por defecto
   dialect: 'postgres',
   pool: {
     max: 5,
